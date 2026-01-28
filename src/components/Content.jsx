@@ -117,7 +117,6 @@ function Content({ isDarkMode }) {
         ease: "easeInOut",
       }}
     >
-      {/* Custom Cursor Logo */}
       {isThesisHovered && (
         <motion.div
           className="fixed pointer-events-none z-[9999]"
@@ -137,7 +136,6 @@ function Content({ isDarkMode }) {
           />
         </motion.div>
       )}
-      {/* About Me */}
       <section id="about" className="animate-fadeIn">
         <h2
           className={`text-2xl sm:text-3xl lg:text-4xl font-semibold mb-5 ${isDarkMode ? "text-white border-[#444]" : "text-[#1a1a1a] border-[#f0f0f0]"} pb-3 border-b-2`}
