@@ -28,7 +28,14 @@ function Content({ isDarkMode }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [educationTab, setEducationTab] = useState("education");
+  const [setIsSeminarTab] = useState(false);
+  const [setIsEducationTab] = useState(true);
 
+  const handleSetEducationTab = (tab) => {
+    setEducationTab(tab);
+    setIsEducationTab(tab === "education");
+    setIsSeminarTab(tab === "seminar");
+  };
   // Initialize EmailJS
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
@@ -223,7 +230,9 @@ function Content({ isDarkMode }) {
             animate={{ color: isDarkMode ? "#fff" : "#1a1a1a" }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
-            Education
+
+            {educationTab === "education" ? "Education" : "Seminar"}
+
           </motion.h2>
 
           <div className="flex items-center gap-2">
