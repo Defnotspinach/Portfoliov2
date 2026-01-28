@@ -76,7 +76,6 @@ function Content({ isDarkMode }) {
           to_email: "marcaedrian67@gmail.com",
         },
       );
-      console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
 
       if (response.status === 200) {
         setSubmitStatus("success");
@@ -87,7 +86,6 @@ function Content({ isDarkMode }) {
       console.error("Error sending email:", error);
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(null), 5000);
-      console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
     } finally {
       setIsSubmitting(false);
     }
