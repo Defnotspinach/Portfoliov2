@@ -38,10 +38,6 @@ function Content({ isDarkMode }) {
       );
     }
     emailjs.init(publicKey);
-    console.log(
-      "EmailJS initialized. Service ID:",
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    );
   }, []);
 
   useEffect(() => {
