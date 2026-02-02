@@ -798,6 +798,33 @@ function Content({ isDarkMode }) {
               commuter experience.
             </p>
           </div>
+
+          {/* Flowerama */}
+          <div
+            className={`p-5 rounded-lg border transition hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? "bg-[#2a2a2a] border-[#444]" : "bg-white border-[#e0e0e0]"}`}
+          >
+            <div className="flex items-start justify-between gap-2 mb-2 flex-wrap">
+              <h3
+                className={`text-base font-bold ${isDarkMode ? "text-white" : "text-[#1a1a1a]"}`}
+              >
+                Flowerama
+              </h3>
+              <div className="flex flex-wrap gap-1.5">
+                <span
+                  className={`px-2 py-0.5 rounded text-[10px] font-medium ${isDarkMode ? "bg-[#3a3a3a] text-[#bbb]" : "bg-[#f0f0f0] text-[#555]"}`}
+                >
+                 Vite + React
+                </span>
+                
+              </div>
+            </div>
+
+            <p
+              className={`text-xs ${isDarkMode ? "text-[#aaa]" : "text-[#666]"}`}
+            >
+              Simple Flowering Game That uses only Frontend Technologies. You Can use this in your free time to relax and have fun. And for Valentines
+            </p>
+          </div>
         </div>
       </section>
 
